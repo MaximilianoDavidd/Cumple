@@ -16,14 +16,13 @@
                 <p>Escribe tu nombre</p>
                 <img src="./recursos/simpsons-bart-logo-BFAD55C386-seeklogo.com.png" class="bart" alt="imagen de bart simpson">
                 <input type="text" id="nombre" class="nombre-style">
-                <button onclick="enviarNombre()" class="boton">Hecho</button>
+                <button onclick="enviarNombre(); iniciarTemporizador();" class="boton">Hecho</button>
             </div>
         </div>
         <video id="myVideo"
-            src="./recursos/Colorful Neon Animation Photo Happy Birthday Congratulation Mobile Video.mp4" autoplay
-            onended="replayVideo()"></video>
-    </main>
-
+            src="./recursos/Colorful Neon Animation Photo Happy Birthday Congratulation Mobile Video.mp4" controls
+            onended="replayVideo()" onplay="iniciarTemporizador()"></video>
+    
 </body>
 <script src="./js/main.js"></script>
 <script src="./js/modal.js"></script>

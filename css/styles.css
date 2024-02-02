@@ -21,9 +21,10 @@ main .padre {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 10px;
   margin-top: 55%;
+  z-index: 9999;
   display: none;
 }
 main .padre .formulario-1 {
