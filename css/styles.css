@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  width: 375px;
 }
 
 * {
@@ -8,23 +8,24 @@ body {
 }
 
 main {
-  width: 320px;
+  width: 375px;
 }
 main h1 {
   text-align: center;
 }
 main video {
-  width: 320px;
+  width: 100vw;
+  z-index: 1;
 }
 main .padre {
-  width: 320px;
+  width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   left: 10px;
   margin-top: 55%;
-  z-index: 9999;
+  z-index: 1000;
   display: none;
 }
 main .padre .formulario-1 {
@@ -33,7 +34,7 @@ main .padre .formulario-1 {
   justify-content: center;
   align-items: center;
   height: 10em;
-  width: 295px;
+  width: 300px;
   border: 2px solid rgba(0, 0, 0, 0.185);
   border-radius: 3px;
   background-color: white;
