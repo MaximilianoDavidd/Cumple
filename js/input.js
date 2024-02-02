@@ -1,21 +1,16 @@
-
- // Obtener los valores de entrada del input
- document.addEventListener("DOMContentLoaded", () => {
-    // Agregar un evento click al botón
+document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.boton').addEventListener('click', () => {
-        // Obtener el valor del campo de entrada
-        const nombre = document.getElementById('nombre').value;
+        const nombre = document.getElementById('nombre').value.trim();
+        const nombresVip = ['LUCAS', 'GUADALUPE', 'FLORENCIA', 'LUDMILA', 'GERALDINE', 'JULIETA'];
 
-        // Nombres VIP
-        const nombresVip = ['lucas', 'guadalupe', 'florencia', 'ludmila', 'geraldine', 'julieta'];
+        if (nombre !== "") {
+            const nombreMayuscula = nombre.toUpperCase();
+            window.nombreIngresado = nombreMayuscula;
 
-        // Verificar si se ha ingresado un nombre
-        if (nombre.trim() !== "") {
-            // Verificar si el nombre está en la lista VIP
-            if (nombresVip.includes(nombre.toLowerCase())) {
+            if (nombresVip.includes(nombreMayuscula)) {
                 window.location.href = '../sections/vip.html';
             } else {
-                window.location.href = '../sections/general.html';
+                window.location.href = `../sections/general.html?nombre=${encodeURIComponent(nombreMayuscula)}`;
             }
         } else {
             alert("Por favor, ingresa tu nombre antes de presionar el botón");
