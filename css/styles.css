@@ -1,5 +1,5 @@
 body {
-  width: 375px;
+  width: 100vw;
 }
 
 * {
@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  width: 375px;
+  width: 100vw;
 }
 main h1 {
   text-align: center;
@@ -18,12 +18,12 @@ main video {
   z-index: 1;
 }
 main .padre {
-  width: 375px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  left: 10px;
+  left: 3vw;
   margin-top: 55%;
   z-index: 1000;
   display: none;
