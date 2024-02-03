@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (nombresVip.includes(nombreMayuscula)) {
                 window.location.href = '../sections/vip.html';
             } else {
-                window.location.href = `../sections/general.html?nombre=${encodeURIComponent(nombreMayuscula)}`;
+                window.location.href = `./sections/general.html?nombre=${encodeURIComponent(nombreMayuscula)}`;
             }
         } else {
             alert("Por favor, ingresa tu nombre antes de presionar el botón");

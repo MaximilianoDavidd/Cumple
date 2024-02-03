@@ -16,7 +16,7 @@ body {
 }
 .main-portada video {
   width: 100vw;
-  height: 150vw;
+  height: 160vw;
   z-index: 1;
 }
 .main-portada .padre {
