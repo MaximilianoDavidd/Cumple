@@ -15,8 +15,9 @@ body {
   text-align: center;
 }
 .main-portada video {
+  margin-top: 10vh;
   width: 100vw;
-  height: 160vw;
+  height: 150vw;
   z-index: 1;
 }
 .main-portada .padre {

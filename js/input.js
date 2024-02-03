@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.nombreIngresado = nombreMayuscula;
 
             if (nombresVip.includes(nombreMayuscula)) {
-                window.location.href = '../sections/vip.html';
+                window.location.href = './sections/vip.html';
             } else {
                 window.location.href = `./sections/general.html?nombre=${encodeURIComponent(nombreMayuscula)}`;
             }
